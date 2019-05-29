@@ -1,0 +1,35 @@
+package com.sap.psr.vulas.backend.requests;
+
+import java.io.IOException;
+import java.io.Serializable;
+
+import com.sap.psr.vulas.backend.BackendConnectionException;
+import com.sap.psr.vulas.backend.HttpResponse;
+import com.sap.psr.vulas.goals.GoalContext;
+
+/**
+ * Http request that can be send and saved to (loaded from) disk.
+ *
+ */
+public interface HttpRequest extends Serializable {
+
+	public HttpResponse send() throws BackendConnectionException;
+	
+	public GoalContext getGoalContext();
+	
+	public HttpRequest setGoalContext(GoalContext _ctx);
+
+	public void saveToDisk() throws IOException;
+
+	public void savePayloadToDisk() throws IOException;
+	
+	public void loadFromDisk() throws IOException;
+	
+	public void loadPayloadFromDisk() throws IOException;
+
+	public void deleteFromDisk() throws IOException;
+
+	public void deletePayloadFromDisk() throws IOException;
+
+	public String getFilename();
+}

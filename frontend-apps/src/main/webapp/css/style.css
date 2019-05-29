@@ -1,0 +1,66 @@
+.paddingTop10 {
+	padding-top: 10px;
+}
+
+.archivesHeader {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.marginTopBottom {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.icon1 {
+	margin: 0.6em 0.5em auto 1.2em;
+}
+
+.icon2 {
+	margin: 0.5em 0.5em auto 0.25em;
+}
+
+.marginVerticalContent {
+	margin: 0.3em;
+}
+
+.marginBugDetailTables {
+	margin: 0.3em 0;
+}
+
+.archiveTable{
+	 @extend .sapMListTblCell;
+	 border: 2px solid gray;
+}
+
+.letterSpacingShrink {
+	letter-spacing: -0.5px;
+}
+
+.warningColor .sapMListTblCell.sapMListTblHeaderCell.sapMTableTH {
+	background-color: #ffab85;
+}
+
+.temporaryWorkSpace:before {
+	content: 'Non default space';
+    display: block;
+    text-align: center;
+}
+
+.defaultWorkSpace:before {
+	content: 'Default space';
+    display: block;
+    text-align: center;
+}
+
+.width100{
+	width: 100%;
+}
+
+.sapMMsgStrip {
+	border-radius: 0 !important;
+}
+
+.sapMMsgStripMessage>.sapMLnk {
+	margin-left: 0 !important;
+}
